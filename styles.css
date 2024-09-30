@@ -7,6 +7,26 @@ body {
     display: none;
 }
 
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 24px;
+    font-weight: 600;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 22px;
+}
+
+p {
+    font-weight: 400;
+    font-size: 16px;
+}
+
 a:active,a:hover {
     color: rgb(253, 148, 222)
 }
@@ -18,7 +38,8 @@ header {
     position: sticky;
     top: 0;
     background-color: rgb(255, 255, 255);
-    border: solid red;
+    z-index: 99;
+    /* border: solid red; */
 }
 
 header .desktop {
@@ -27,36 +48,40 @@ header .desktop {
     align-items: center;
     padding: 0 24px;
     height: 64px;
-    border: solid red;
+    /* border: solid red; */
 }
 
 .logo {
     display: flex;
     align-items: center;
+    /* border: solid red; */
 }
 
 .logo p span {
     color: rgb(155, 155, 155);
+    /* border: solid red; */
 }
 
 .logo p {
     font-size: 32px; 
+    /* border: solid red; */
 }
 
 .logo img {
     height: 50px;
     width: auto;
+    /* border: solid red; */
 }
 
 header nav ul {
     display: flex;
     list-style: none;
-    border: solid red;
+    /* border: solid red; */
 }
 
 nav li {
     padding-left: 16px;
-    border: solid red;
+    /* border: solid red; */
 }
 
 nav a {
@@ -64,7 +89,7 @@ nav a {
     font-size: 1rem;
     color: black;
     text-decoration: none;
-    border: solid red;
+    /* border: solid red; */
 }
 
 /* main */
@@ -76,15 +101,15 @@ nav a {
     grid-template-columns: 1.5fr 1fr;
     gap: 24px;
     padding: 32px 24px;
-    background-color: rgba(212, 212, 212, 0.74);
+    background-color: rgba(218, 214, 214, 0.74);
     align-items: center;
     margin-bottom: 2px;
-    border: solid red;
+    /* border: solid red; */
 }
 
 .main-Images {
     width: 100%;
-    border: solid red;
+    /* border: solid red; */
 }
 
 .hero button {
@@ -95,7 +120,7 @@ nav a {
     background-color: rgb(126, 125, 125);
     border-radius: 3px;
     transition: 0.2s ease-in;
-    border: solid red;
+    /* border: solid red; */
 }
 
 .hero button:active {
@@ -112,12 +137,12 @@ nav a {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     gap: 24px;
-    border: solid red;
+    /* border: solid red; */
 }
 
 .introduction {
     padding: 32px 0px 32px 24px;
-    border: solid red;
+    /* border: solid red; */
 }
 
 .newsfeed {
@@ -125,14 +150,14 @@ nav a {
     border-color: aliceblue;
     padding-top: 16px;
     padding-bottom: 32px;
-    border: solid red;
+    /* border: solid red; */
 }
 
 .info {
     display: grid;
     grid-template-columns: 1fr 1.45fr; 
     gap: 16px;
-    border: solid red;
+    /* border: solid red; */
     margin: 1px;
 }
 
@@ -169,13 +194,13 @@ nav a {
 .learning {
     background-color: #fff;
     padding: 0px 72px 32px 72px;
-    border: solid red;
+    /* border: solid red; */
 }
 
 .section-headline {
     padding: 32px;
     text-align: center;
-    border: solid red;
+    /* border: solid red; */
 }
 
 .courses {
@@ -183,7 +208,7 @@ nav a {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 32px;
-    border: solid red;
+    /* border: solid red; */
 }
 
 .categories {
@@ -191,7 +216,7 @@ nav a {
     transition: 0.3s ease-in;
     border-radius: 5px;
     overflow: hidden;
-    border: solid red;
+    /* border: solid red; */
 }
 
 .categories:hover {
@@ -215,6 +240,7 @@ nav a {
 .categories img {
     height: auto;
     width: 100%;
+    /* border: solid red; */
 }
 
 /* thesis */
@@ -239,7 +265,7 @@ footer {
     border-top: 1px solid rgb(230, 225, 225);
     padding: 16px 24px 64px 16px;
     align-items: start;
-    border: solid red;
+    /* border: solid red; */
 }
 
 footer p {
@@ -249,7 +275,7 @@ footer p {
 footer a {
     text-decoration: none;
     color: #d6d3d3;
-    border: solid red;
+    /* border: solid red; */
 }
 
 footer a:first-child {
@@ -260,8 +286,43 @@ footer a:first-child {
 /* mobile */
 
 @media only screen and (max-width:480px) {
+    header .desktop,.desktop {
+        display: none;
+    }
 
+    nav.mobile {
+        height: 64px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
 
+    nav.mobile li {
+    margin: 20px;
+    }
+
+    /* hero */
+    .hero {
+        display: inline-block;
+    }
+
+    /* information */
+    .introduction {
+        display: none;
+    }
+
+    /* course */
+
+    /* thesis */
 
     
+    /* footer */
+    footer {
+        padding: 0;
+        border: none;
+    }
+
+    footer p {
+        padding: 16px;
+    }
 }
