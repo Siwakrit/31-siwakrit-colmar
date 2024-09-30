@@ -141,7 +141,7 @@ nav a {
 }
 
 .introduction {
-    padding: 32px 0px 32px 24px;
+    padding: 32px 24px 32px 24px;
     /* border: solid red; */
 }
 
@@ -193,7 +193,7 @@ nav a {
 
 .learning {
     background-color: #bdbdbd9c;
-    padding: 0px 72px 32px 72px;
+    padding: 32px 72px;
     /* border: solid red; */
 }
 
@@ -222,9 +222,10 @@ nav a {
 .categories:hover {
     transition: 0.3s ease-out;
     transform: scale(1.06);
+    background-color: rgb(244, 213, 250);
 }
 
-.courses-Description {
+.courese-Description {
     display: inline-block;
     padding: 16px 16px 24px 16px;
 }
@@ -250,12 +251,9 @@ nav a {
 }
 
 .thesis .introduction {
-    padding: 0px 0px 32px 24px;
+    padding: 32px 24px;
 }
 
-.thesis .newsfeed {
-    padding-top: 0px;
-}
 
 /* footer */
 
